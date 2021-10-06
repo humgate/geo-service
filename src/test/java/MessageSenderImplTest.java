@@ -16,7 +16,6 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 public class MessageSenderImplTest {
-
     /**
      * Тестируем метод String MessageSenderImpl.send(Map<String, String> headers)
      * На вход тесту подаем тройку аргументов:
@@ -24,7 +23,11 @@ public class MessageSenderImplTest {
      * country - страна, правильно соответствующая argumentIP
      * expected - ожидаемый результат, правильно соответсвующий country
      *
-     * "пакеты" из трех входных значений будет поставлять нам метод factory
+     * @param argumentIP - IP адрес
+     * @param country - страна, правильно соответствующая argumentIP
+     * @param expected - ожидаемый результат, правильно соответсвующий country
+     *
+     * "пакеты" из трех входных значений поставляет метод factory
      */
     @ParameterizedTest
     @MethodSource("factory")
