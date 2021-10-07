@@ -1,3 +1,5 @@
+package ru.netology.sender;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -6,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.Mockito;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
-import ru.netology.geo.GeoService;
+import ru.netology.GeoService;
 import ru.netology.i18n.LocalizationService;
 import ru.netology.sender.MessageSender;
 import ru.netology.sender.MessageSenderImpl;
